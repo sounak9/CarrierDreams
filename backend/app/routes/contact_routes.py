@@ -30,15 +30,18 @@ def create_contact():
     db.session.commit()
 
     # Send email to admin
-    send_email(
-        subject="New Contact Form Submission",
-        body=f"""
-        Name: {name}
-        Email: {email}
-        Phone: {phone}
-        Message: {message}
-        """,
-        to_email=os.getenv("MAIL_USERNAME")
-    )
+    try:
+        send_email(
+            subject="New Contact Form Submission",
+            body=f"""
+            Name: {name}
+            Email: {email}
+            Phone: {phone}
+            Message: {message}
+            """,
+            to_email=os.getenv("MAIL_USERNAME")
+        )
+    except Exception as e:
+        print("Email failed:", e)
 
     return jsonify({"message": "Form submitted successfully"}), 201
