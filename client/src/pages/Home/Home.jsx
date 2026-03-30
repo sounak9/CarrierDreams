@@ -5,7 +5,7 @@ import TestimonialSection from "../../components/sections/testimonials/Testimoni
 
 import SEO from "../../components/seo/SEO";
 import StatsSection from "../../components/sections/stats/StatsSection";
-import CtaSection from "../../components/sections/cta/CtaSection";
+import Enqueryform from "../../components/sections/cta/Enqueryform";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <ServicesSection />
       <ProcessSection />
       <TestimonialSection />
-      <CtaSection />
+      <Enqueryform />
     </>
   );
 }

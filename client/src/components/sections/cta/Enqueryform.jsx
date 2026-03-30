@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CheckCircle } from "lucide-react";
 import { submitContact } from "../../../services/contactService";
 
-const CtaSection = () => {
+const Enqueryform = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -142,4 +142,4 @@ const CtaSection = () => {
   );
 };
 
-export default CtaSection;
+export default Enqueryform;
