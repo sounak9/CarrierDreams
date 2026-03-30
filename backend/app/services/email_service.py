@@ -12,14 +12,14 @@ def send_email(subject, body, to_email):
 
         msg.attach(MIMEText(body, "plain"))
 
-        # ✅ Use SMTP (NOT SSL)
+        # ✅ FIXED VERSION
         server = smtplib.SMTP(
             os.getenv("MAIL_SERVER"),
             int(os.getenv("MAIL_PORT")),
-            timeout=10  # 🔥 prevents hanging
+            timeout=10
         )
 
-        server.starttls()  # ✅ TLS instead of SSL
+        server.starttls()
 
         server.login(
             os.getenv("MAIL_USERNAME"),
@@ -34,7 +34,7 @@ def send_email(subject, body, to_email):
 
         server.quit()
 
-        print("✅ Email sent successfully")
+        print("✅ Email sent")
 
     except Exception as e:
-        print("❌ Email Error:", str(e))  # 🔥 DO NOT CRASH API
+        print("❌ Email failed:", str(e))
