@@ -2,6 +2,22 @@ import { Facebook, Instagram, Linkedin, MapPin, Phone } from "lucide-react";
 import logo from "../../assets/images/logos/logo.png";
 
 const Footer = () => {
+  // ✅ MOVE IT HERE
+  const socialLinks = [
+    {
+      icon: Facebook,
+      url: "https://facebook.com/yourprofile",
+    },
+    {
+      icon: Instagram,
+      url: "https://instagram.com/yourprofile",
+    },
+    {
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/carrier-dreams-2a14543b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  ];
+
   return (
     <footer className="bg-gray-100 text-blue-900 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -9,6 +25,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* COLUMN 1 */}
           <div>
+            {" "}
+            {/* ❗ also removed unnecessary <> fragment */}
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="Carrier Dreams" className="h-16" />
               <span className="text-2xl font-bold">
@@ -16,21 +34,22 @@ const Footer = () => {
                 <span className="text-black">Dreams</span>
               </span>
             </div>
-
             <p className="text-sm leading-relaxed text-gray-600">
               Leading education and career consultancy helping students reach
               their full potential across borders.
             </p>
-
             {/* Social Icons */}
             <div className="flex gap-4 mt-6">
-              {[Facebook, Instagram, Linkedin].map((Icon, index) => (
-                <div
+              {socialLinks.map(({ icon: Icon, url }, index) => (
+                <a
                   key={index}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-[#132544] hover:bg-yellow-500 transition cursor-pointer"
                 >
                   <Icon size={16} className="text-white" />
-                </div>
+                </a>
               ))}
             </div>
           </div>

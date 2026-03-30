@@ -30,9 +30,9 @@ const Navbar = () => {
           <nav className="hidden lg:flex items-center gap-6">
             {[
               { name: "Home", path: "/", end: true },
-              { name: "Study Abroad", path: "/services" },
-              { name: "Study in India", path: "/destinations" },
-              { name: "Jobs", path: "/jobs" },
+              { name: "Study Abroad", path: "/study-abroad" },
+              { name: "Study in India", path: "/study-in-india" },
+
               { name: "About Us", path: "/about" },
               { name: "Contact Us", path: "/contact" },
             ].map((item) => (
@@ -119,12 +119,11 @@ const Navbar = () => {
             <NavLink to="/" end>
               Home
             </NavLink>
-            <NavLink to="/services">Study Abroad</NavLink>
-            <NavLink to="/destinations">Study in India</NavLink>
-            <NavLink to="/jobs">Jobs</NavLink>
+            <NavLink to="/study-abroad">Study Abroad</NavLink>
+            <NavLink to="/study-in-india">Study in India</NavLink>
+            {/* <NavLink to="/jobs">Jobs</NavLink> */}
             <NavLink to="/about">About Us</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
-
             <Link
               to="/"
               onClick={() => {

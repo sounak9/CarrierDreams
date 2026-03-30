@@ -1,9 +1,8 @@
 import HeroSection from "../../components/sections/hero/HeroSection";
 import ServicesSection from "../../components/sections/services/ServicesSection";
-import DestinationsSection from "../../components/sections/destinations/DestinationsSection";
 import ProcessSection from "../../components/sections/process/ProcessSection";
 import TestimonialSection from "../../components/sections/testimonials/TestimonialSection";
-import ContactSection from "../../components/sections/contact/ContactSection";
+
 import SEO from "../../components/seo/SEO";
 import StatsSection from "../../components/sections/stats/StatsSection";
 import CTASection from "../../components/sections/cta/CTAsection";
