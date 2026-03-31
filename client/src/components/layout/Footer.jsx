@@ -101,13 +101,14 @@ const Footer = () => {
             <div className="flex gap-3 text-sm text-gray-600 mb-4">
               <MapPin size={16} className="text-yellow-400 mt-1" />
               <span>
-                123 Global Avenue, Tech Park Phase 1, Bangalore, KA - 560001
+                C.K 15/29 Katra Ratanlal, Thatheri Bazar, Govindpura, Varanasi,
+                Uttar Pradesh 221001
               </span>
             </div>
 
             <div className="flex gap-3 text-sm text-gray-600">
               <Phone size={16} className="text-yellow-400 mt-1" />
-              <span>+91 80 4567 8900</span>
+              <span>+91 88519 92918</span>
             </div>
           </div>
         </div>
