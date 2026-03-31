@@ -43,5 +43,7 @@ def create_contact():
         )
     except Exception as e:
         print("Email failed:", e)
+    
+    
 
     return jsonify({"message": "Form submitted successfully"}), 201
