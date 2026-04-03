@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Global Study & Work Consultancy"
-        description="Carrier Dreams helps students and professionals achieve international success."
+        title="Carrier Dreams | Study Abroad & Career Consultancy"
+        description="Carrier Dreams is a global education consultancy helping students study abroad in USA, UK, Canada & Australia."
         url="https://carrierdreams.com"
       />
 
