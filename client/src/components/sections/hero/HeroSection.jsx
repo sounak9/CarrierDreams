@@ -19,8 +19,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl"
         >
-          Your Dreams, Our Mission:{" "}
-          <span className="text-yellow-400">Global Education</span> & Careers
+          Carrier Dreams – Study Abroad & Global Career Consultancy{" "}
+          <span className="text-yellow-400">for Your Future Success</span>
         </motion.h1>
 
         {/* Subtext Animation */}
@@ -30,8 +30,9 @@ const HeroSection = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-6 text-lg text-gray-200 max-w-2xl"
         >
-          Personalized consultancy for top-tier universities and global job
-          placements. Start your journey with the world's most trusted advisors.
+          Carrier Dreams provides expert guidance for studying abroad in USA,
+          UK, Canada, and Australia. We help students achieve global education
+          opportunities, visa success, and international career placements.
         </motion.p>
 
         {/* Form Animation */}
