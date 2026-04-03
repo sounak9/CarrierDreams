@@ -19,7 +19,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl"
         >
-          Carrier Dreams – Study Abroad & Global Career Consultancy{" "}
+          CarrierDreams – Study Abroad & Global Career Consultancy{" "}
           <span className="text-yellow-400">for Your Future Success</span>
         </motion.h1>
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-6 text-lg text-gray-200 max-w-2xl"
         >
-          Carrier Dreams provides expert guidance for studying abroad in USA,
+          CarrierDreams provides expert guidance for studying abroad in USA,
           UK, Canada, and Australia. We help students achieve global education
           opportunities, visa success, and international career placements.
         </motion.p>
